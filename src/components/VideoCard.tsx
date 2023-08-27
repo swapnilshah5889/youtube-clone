@@ -2,9 +2,9 @@ import React from 'react'
 
 const VideoCard = (props:any) => {
   return (
-    <div>
+    <div className='p-3'>
         <img src="/photo.png" className='rounded-xl' alt='img'></img>
-        <div className='grid grid-cols-12 pt-2'>
+        <div className='grid grid-cols-12 p-2 '>
             
             <div className='col-span-1'>
                 <img className='rounded-full w-12 h-12' 
