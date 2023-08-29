@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { VideoGrid } from '@/components/VideoGrid'
 import { AppBar } from '@/components/AppBar'
+import { SideBar } from '@/components/SideBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -46,10 +47,19 @@ export default function Home() {
       {/* App Bar */}
       <AppBar />
 
-      {/* Video grid */}
-      <VideoGrid 
-      videosArr={VIDEOS}
-      />
+      {/* Sidebar and Video Grid */}
+      <div className="grid grid-cols-10 lg:grid-cols-12">
+        
+        <div className='block hidden lg:block col-span-2 mt-4'>
+          <SideBar />
+        </div>
+        {/* Video grid */}
+        <div className='col-span-10'>
+          <VideoGrid 
+          videosArr={VIDEOS}
+          />
+        </div>
+      </div>
     </div>
   )
 }
