@@ -2,7 +2,7 @@ import React from 'react'
 
 const VideoCard = (props:any) => {
   return (
-    <div className='cursor-pointer'>
+    <div className='cursor-pointer rounded-lg hover:bg-gray-800'>
         <img src="/photo.png" className='rounded-xl mx-auto w-full object-cover' alt='img' />
         <div className='grid grid-cols-12 p-2 '>
             
